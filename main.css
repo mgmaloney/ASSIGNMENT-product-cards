@@ -1,15 +1,40 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("fonts/Pokemon\ Solid.ttf");
+}
+
 body {
-  background-color: aqua;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: "Pokemon";
 }
 
 .wrapper {
   display: flex;
+  justify-content: center;
+}
+
+.bgimg {
+  width: 100%;
+  height: 1500px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0634/7194/3915/articles/4edccb1f634bb1b24989c7e836cf9e0f_380x278_crop_center.jpg?v=1680704110");
+  background-repeat: repeat;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body {
+  background: #eeda25;
+  background: -webkit-linear-gradient(top left, #eeda25, #cfb4e3);
+  background: -moz-linear-gradient(top left, #eeda25, #cfbs4e3);
+  background: linear-gradient(to bottom right, #eeda25, #cfb4e3);
 }
 
 .card {
-  top: 200px;
-  bottom: 200px;
-  margin: 10px;
+  margin: 15px;
+  border: 1px solid lightblue;
+  border-radius: 10%;
 }
 
 .wrapper {
@@ -27,6 +52,8 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   width: 1000px;
+  top: 100px;
+  bottom: 200px;
 }
 
 .card-title {
@@ -56,8 +83,19 @@ h2 {
   font-weight: 900;
 }
 
+h5 {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
 .specification {
   font-weight: bold;
+  font-size: 12px;
+}
+
+.cardfoot {
+  margin: 5px;
+  font-size: 8px;
 }
 
 .pricing {
